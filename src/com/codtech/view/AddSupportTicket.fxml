@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codtech.view.AddSupportTicketController">
+    <children>
+        <Label layoutX="200.0" layoutY="46.0" text="Add Support Ticket">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="70.0" layoutY="280.0" text="ID:"/>
+        <Label layoutX="70.0" layoutY="192.0" text="Client ID:"/>
+        <Label layoutX="70.0" layoutY="148.0" text="Ticket Description:"/>
+        <Label layoutX="70.0" layoutY="236.0" text="Status:"/>
+        <Label layoutX="70.0" layoutY="104.0" text="Ticket Title:"/>
+        
+
+        <TextField fx:id="idField" layoutX="210.0" layoutY="276.0" prefHeight="25.0" prefWidth="290.0"/>
+        <TextField fx:id="clientIdField" layoutX="210.0" layoutY="190.0" prefHeight="25.0" prefWidth="290.0"/>
+        <TextArea fx:id="descriptionArea" layoutX="210.0" layoutY="145.0" prefHeight="40.0" prefWidth="290.0"/>
+        <TextField fx:id="statusField" layoutX="210.0" layoutY="232.0" prefHeight="25.0" prefWidth="290.0"/>
+        <TextField fx:id="titleField" layoutX="210.0" layoutY="100.0" prefHeight="25.0" prefWidth="290.0"/>
+        
+        <Button layoutX="247.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleAddSupportTicket" text="Add Support Ticket"/>
+    </children>
+</AnchorPane>

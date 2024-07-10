@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.codtech.view.MainMenuController">
+    <Button text="Add Client" onAction="#handleAddClient"/>
+    <Button text="Update Client" onAction="#handleUpdateClient"/>
+    <Button text="Delete Client" onAction="#handleDeleteClient"/>
+    <Button text="View All Clients" onAction="#handleViewAllClients"/>
+    <Button text="Add Support Ticket" onAction="#handleAddSupportTicket"/>
+    <Button text="Update Support Ticket" onAction="#handleUpdateSupportTicket"/>
+    <Button text="Delete Support Ticket" onAction="#handleDeleteSupportTicket"/>
+    <Button text="View All Support Tickets" onAction="#handleViewAllSupportTickets"/>
+    <Button text="Add Report" onAction="#handleAddReport"/>
+    <Button text="Delete Report" onAction="#handleDeleteReport"/>
+    <Button text="View All Reports" onAction="#handleViewAllReports"/>
+    <Button text="Exit" onAction="#handleExit"/>
+</VBox>

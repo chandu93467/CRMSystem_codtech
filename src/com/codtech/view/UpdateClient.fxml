@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.codtech.view.UpdateClientController">
+    <TextField fx:id="idField" promptText="Client ID"/>
+    <TextField fx:id="firstNameField" promptText="New First Name"/>
+    <TextField fx:id="lastNameField" promptText="New Last Name"/>
+    <TextField fx:id="emailField" promptText="New Email"/>
+    <TextField fx:id="phoneField" promptText="New Phone"/>
+    <TextField fx:id="addressField" promptText="New Address"/>
+    <Button text="Update Client" onAction="#handleUpdateClient"/>
+    <Button text="Back" onAction="#handleBack"/>
+</VBox>

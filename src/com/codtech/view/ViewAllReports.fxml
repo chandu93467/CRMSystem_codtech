@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codtech.view.ViewAllReportsController">
+    <children>
+        <TableView fx:id="reportTableView" layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="titleColumn" text="Title" prefWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="title" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="contentColumn" text="Content" prefWidth="200">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="content" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="generatedAtColumn" text="Generated At" prefWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="generated_at" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Button layoutX="50.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleBackButtonAction" text="Back"/>
+    </children>
+</AnchorPane>
