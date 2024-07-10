@@ -1,1 +1,1 @@
-install javafx to run this application
+install javafx-sdk to run this application
