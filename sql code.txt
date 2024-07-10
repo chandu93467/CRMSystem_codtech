@@ -1,0 +1,65 @@
+CREATE DATABASE codtech_crm;
+USE codtech_crm;
+CREATE TABLE clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    address VARCHAR(255)
+);
+CREATE TABLE support_tickets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    clientId INT NOT NULL,
+    description TEXT NOT NULL,
+    status ENUM('Open', 'Closed', 'In Progress') DEFAULT 'Open',
+    FOREIGN KEY (clientId) REFERENCES clients(id)
+);
+CREATE TABLE reports (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    content TEXT NOT NULL,
+    generatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+SHOW VARIABLES LIKE 'port';
+SHOW VARIABLES LIKE 'bind_address';
+Show tables
+
+
+select * from clients
+show table support_tickets
+select * from support_tickets
+DESCRIBE support_tickets;
+ALTER TABLE support_tickets ADD COLUMN title VARCHAR(255);
+DESCRIBE support_tickets;
+DESCRIBE reports;
+ALTER TABLE reports ADD COLUMN generated_at TIMESTAMP;
+DESCRIBE reports;
+ALTER TABLE reports
+DROP COLUMN generatedat;
+DESCRIBE reports;
+describe clients;
+
+
+select * from reports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
